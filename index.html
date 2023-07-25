@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -8,16 +9,31 @@
     <script src="https://cdn.tailwindcss.com"></script>
     <!-- font awesome  -->
     <script src="https://kit.fontawesome.com/6e6041f935.js" crossorigin="anonymous"></script>
+    <!-- google font  -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Roboto:wght@400;500;700&display=swap"
+        rel="stylesheet">
+    <style>
+       
+        .font-bebas{
+            font-family: 'Bebas Neue', sans-serif;
+        }
+        .font-roboto {
+            font-family: 'Roboto', sans-serif;
 
+        }
+    </style>
 </head>
-<body class="max-w-[1440px]">
+
+<body class="max-w-[1440px] mx-auto">
     <header class="px-2 md:px-10 lg:px-32 py-8 md:py-10 lg:py-12 bg-[#FFFBF0]">
         <!-- nav start  -->
         <nav class="flex flex-col lg:flex-row gap-8  justify-between items-center">
             <div>
                 <img class="h-10" src="icons/logo.png" alt="">
             </div>
-            <ul class="flex flex-col items-center md:flex-row gap-5 md:gap-14 text-base font-medium text-[#3C3C3C]">
+            <ul class="flex flex-col items-center md:flex-row gap-5 md:gap-14 text-base font-medium font-roboto text-[#3C3C3C]">
                 <li>
                     <a href="">Home</a>
                 </li>
@@ -37,13 +53,17 @@
         <!-- banner start  -->
         <section class="mt-6 flex flex-col-reverse lg:flex-row justify-center items-center gap-10 lg:gap-24">
             <div class="w-full lg:w-1/2">
-                <h1 class="text-4xl md:text-7xl uppercase">
+                <h1 class="text-4xl md:text-7xl uppercase 
+                font-bebas">
                     <span class="text-[#FABE4C]">Be the Penguins</span>
                     <br>
                     <span class="text-[#363958]">of Winter</span>
                 </h1>
-                <p class="mt-2 text-lg">Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
-                <button class="mt-2 uppercase text-white text-xl  bg-gradient-to-br from-[#A4BC46] to-[#85A019] px-8 py-4 rounded-xl flex items-center gap-1"><i class="fa-solid fa-cart-shopping"></i> buy now</button>
+                <p class="mt-2 text-lg font-roboto">Lorem Ipsum is simply dummy text of the printing and typesetting
+                    industry.</p>
+                <button
+                    class="mt-2 uppercase font-roboto  text-white text-xl  bg-gradient-to-br from-[#A4BC46] to-[#85A019] px-8 py-4 rounded-xl flex items-center gap-1"><i
+                        class="fa-solid fa-cart-shopping"></i> buy now</button>
             </div>
             <div class="w-full lg:w-1/2	">
                 <img class="w-full" src="images/model.png" alt="">
@@ -58,4 +78,5 @@
 
     </footer>
 </body>
+
 </html>
